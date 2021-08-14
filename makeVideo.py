@@ -6,7 +6,7 @@ import cv2
 import matplotlib.pyplot as plt
 import tensorflow as tf
 
-# this algorithm loads the video we trained on earlier and tloads the trained model and then predicts every frame in that video
+# this algorithm loads the video we trained on earlier and loads the trained model and then predicts every frame in that video
 # and make a resulting video with avi extension
 model = tf.keras.models.load_model('unet.h5')
 
