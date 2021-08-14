@@ -2,6 +2,10 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
+# this algorithm takes all the images in the results from the CV and convert them into binary by looking at the three channels
+# and of every pixel in the image and if the first channel is more than some threshold and the other 2 channels are less
+# than another threshold we set that pixel to be white and then wrinting the result to a folder called labels which will be
+# our reference when training the model
 for i in range(1,175): 
     res = np.zeros((128,128))
     frame = cv2.imread('results cv/res{}.jpg'.format(i))
